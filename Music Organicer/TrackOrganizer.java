@@ -22,7 +22,7 @@ public class TrackOrganizer {
     }
 
     public void makeFirstTrack() {
-        addCD("Sanger", "knut", 2001, "HaramStudio", 65);
+        addCD("Harams hits for kids", "knut", 2001, "HaramStudio", 65);
         //Medium enRandomCd = mediumArchive.getMediumAt(65);
 
         String title = "Thriller";
@@ -71,6 +71,9 @@ public class TrackOrganizer {
     public AudioTrack getTrackAt(int index) {
         return trackArchive.getTrackAt(index);
     }
+    
+    
+    
 
     /**
      * Add a Cd too the medium archive

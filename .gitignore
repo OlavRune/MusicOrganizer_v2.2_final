@@ -45,3 +45,5 @@ Temporary Items
 build/classes/MainFrameOlav$1.class
 build/classes/MainFrameOlav.class
 build/classes/MainFrameOlav.form
+*.class
+build/built-jar.properties

@@ -24,6 +24,7 @@ public class MainFrameOlav extends javax.swing.JFrame {
         trackOrganizer = new TrackOrganizer();
         initComponents();
         addMediumPanel.setVisible(false);
+        list.setVisible(false);
         
        
        
@@ -83,17 +84,8 @@ public class MainFrameOlav extends javax.swing.JFrame {
             }
         });
 
-        list.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
+        list.setModel(new MusicTableModel(trackOrganizer)
+        );
         jScrollPane1.setViewportView(list);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -146,31 +138,7 @@ public class MainFrameOlav extends javax.swing.JFrame {
 
     private void listArchiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listArchiveActionPerformed
         // TODO add your handling code here:
-       
-        //JTable table = new JTable(null);
-         //table.add("kake", list);
-        String[] columnNames = {"First Name",
-                                "Last Name",
-                                "Sport",
-                                "# of Years",
-                                "Vegetarian"};
-
-        Object[][] data = {
-	    {"Kathy", "Smith",
-	     "Snowboarding", new Integer(5), new Boolean(false)},
-	    {"John", "Doe",
-	     "Rowing", new Integer(3), new Boolean(true)},
-	    {"Sue", "Black",
-	     "Knitting", new Integer(2), new Boolean(false)},
-	    {"Jane", "White",
-	     "Speed reading", new Integer(20), new Boolean(true)},
-	    {"Joe", "Brown",
-	     "Pool", new Integer(10), new Boolean(false)}
-        };
-                
-        JTable table = new JTable(2,5);
-        //table.setPreferredScrollableViewportSize(new Dimension(500, 70));
-        table.setFillsViewportHeight(true);
+       list.setVisible(true);
 
         
         
