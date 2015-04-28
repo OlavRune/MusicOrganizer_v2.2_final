@@ -18,6 +18,7 @@ public class TrackOrganizer {
         trackArchive = new AudioTrackArchive();
         mediumArchive = new MediumArchive();
         makeFirstTrack();
+        makeArcive();
 
     }
 
@@ -237,6 +238,33 @@ public class TrackOrganizer {
     public void printTest()
     {
         System.out.println("PizzaBurger");
+    }
+    
+    public void makeArcive(){
+        
+        addCD("Harams hits for kids", "Kevin", 2001, "HaramStudio", 65);
+        addCD("Harams hits for retards", "knut", 2001, "HaramStudio", 65);
+        addCD("Brattvågs hits for kids", "knut", 2001, "HaramStudio", 65);
+        addCD("Brattvågs hits for kids", "knut", 2001, "HaramStudio", 65);
+        addCD("Brattvågs hits for kids", "knut", 2001, "HaramStudio", 65);
+        addCD("Harams hits for kids", "knut", 2001, "HaramStudio", 65);
+        addCD("Harams hits for kids", "knut", 2001, "HaramStudio", 65);
+        addCD("Harams hits for kids", "knut", 2001, "HaramStudio", 65);
+        addCD("Harams hits for kids", "knut", 2001, "HaramStudio", 65);
+        addCD("Harams hits for kids", "knut", 2001, "HaramStudio", 65);
+        
+       
+
+        String title = "Thriller";
+        long duration = 12;
+        int date = 32;
+        int timesPlayed = 2;
+        long minutes = 5;
+        long seconds = 24;
+        int archiveNumber = 65;
+
+        String artist = "Mikkel Jækkson";
+        addMusicTrack(title, minutes, seconds, artist, date, timesPlayed, archiveNumber);
     }
     
 
