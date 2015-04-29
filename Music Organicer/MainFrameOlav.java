@@ -77,7 +77,7 @@ public class MainFrameOlav extends javax.swing.JFrame {
                 .addGap(0, 22, Short.MAX_VALUE))
         );
 
-        listArchive.setText("List archive");
+        listArchive.setText("List all tracks");
         listArchive.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 listArchiveActionPerformed(evt);

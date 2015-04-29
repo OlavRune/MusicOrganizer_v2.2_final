@@ -104,7 +104,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="listArchive">
       <Properties>
-        <Property name="text" type="java.lang.String" value="List archive"/>
+        <Property name="text" type="java.lang.String" value="List all tracks"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="listArchiveActionPerformed"/>
