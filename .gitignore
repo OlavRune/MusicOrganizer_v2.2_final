@@ -52,3 +52,5 @@ build/built-jar.properties
 build/built-jar.properties
 build/built-jar.properties
 build/built-jar.properties
+*.class
+dist/Music_Organicer_NB_offline.jar
