@@ -39,7 +39,9 @@ public class MainFrame extends javax.swing.JFrame {
     
     public MainFrame() {
         initComponents();
-        mediumPanel.setVisible(false);
+        mediumFrame.setVisible(true);
+        mediumPanel.setVisible(true);
+        mediumFrame.setSize(200, 300);    
         cdPanel.setVisible(false);
         trackOrganizer = new TrackOrganizer();
         
